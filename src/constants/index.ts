@@ -4,3 +4,5 @@ export const navLinks = [
   { href: "#products", label: "Products" },
   { href: "#contact-us", label: "Contact Us" },
 ];
+
+export const hoverText = "hover:text-red-400 transition-colors duration-300";

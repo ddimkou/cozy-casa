@@ -10,6 +10,10 @@ export default {
         "soft-warm-light": "#FFEFD5",
         "light-green": "#90EE90",
       },
+      fontFamily: {
+        montserrat: ["'Montserrat'", "sans-serif"],
+        palanquin: ["'Palanquin'", "sans-serif"],
+      },
     },
   },
   plugins: [],
