@@ -14,9 +14,9 @@ const Nav = () => {
 
   return (
     <nav
-      className="
-        flex items-center justify-between relative
-        py-2 px-8 w-full bg-blue-100
+      className=" fixed
+        flex items-center justify-between 
+        py-2 px-8 w-full bg-nav-color
         font-montserrat font-medium text-sm"
     >
       {/* left side */}
@@ -51,7 +51,7 @@ const Nav = () => {
       )}
       {/* drop menu */}
       {isMenuToggled && !isAboveMediumScreens && (
-        <div className="absolute top-full left-0 w-full bg-blue-100 py-4 flex flex-col items-center">
+        <div className="absolute top-full right-0  bg-nav-color px-8 flex flex-col items-center">
           {navLinks.map((link) => (
             <a
               key={link.label}
