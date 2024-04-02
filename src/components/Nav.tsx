@@ -16,7 +16,7 @@ const Nav = () => {
     <nav
       className=" fixed w-full
         flex items-center justify-between 
-        py-2 px-8 w-full bg-nav-color
+        py-2 px-8  bg-nav-color
         font-montserrat font-medium text-sm"
     >
       {/* left side */}
