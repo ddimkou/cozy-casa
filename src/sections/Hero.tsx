@@ -8,7 +8,7 @@ const Hero = () => {
       style={{ backgroundImage: `url(${backgroundImg})` }}
     >
       <div
-        className="p-4
+        className="p-8
       flex flex-col justify-center"
       >
         <h1 className="font-bold text-3xl md:text-7xl">
