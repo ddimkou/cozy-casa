@@ -14,7 +14,7 @@ const Nav = () => {
 
   return (
     <nav
-      className=" fixed
+      className=" fixed w-full
         flex items-center justify-between 
         py-2 px-8 w-full bg-nav-color
         font-montserrat font-medium text-sm"
