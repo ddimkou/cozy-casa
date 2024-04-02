@@ -1,9 +1,11 @@
 import HText from "../shared/HText";
-import { products } from "../constants";
+import { ProductTypes, products } from "../constants";
 import { useState } from "react";
 
 const PopularProducts = () => {
-  const [selectedProduct, setSelectedProduct] = useState(products[0]);
+  const [selectedProduct, setSelectedProduct] = useState<ProductTypes>(
+    products[0]
+  );
   return (
     <section id="popular" className="p-8">
       <HText>
@@ -20,6 +22,11 @@ const PopularProducts = () => {
         <div className="relative flex justify-center w-full">
           <img src={selectedProduct.imgUrl} alt="" width={600} />
         </div>
+        {/* title */}
+        <h3 className="text-center font-bold py-2 text-xl">
+          {selectedProduct.item} -{" "}
+          <span className="text-base font-normal">{selectedProduct.code}</span>
+        </h3>
         {/* select */}
         <div className=" flex flex-row items-center justify-center gap-2 flex-wrap">
           {products.map((product) => (
