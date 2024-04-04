@@ -10,7 +10,7 @@ const Count = () => {
   };
 
   return (
-    <section className="w-full bg-black min-h-32 text-white text-center text-sm flex justify-around items-center">
+    <section className="w-full bg-dark-gray min-h-24 md:min-h-28 text-white text-center text-sm flex justify-around items-center">
       <div>
         <p className="text-lg lg:text-2xl">
           <VisibilitySensor onChange={onVisibilityChange} partialVisibility>

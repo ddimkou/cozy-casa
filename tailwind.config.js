@@ -11,6 +11,7 @@ export default {
         "soft-warm-light": "#FFEFD5",
         "light-green": "#90EE90",
         "nav-color": "rgba(144, 154, 154, 0.5)",
+        "dark-gray": "#1D1D1B",
       },
       fontFamily: {
         montserrat: ["'Montserrat'", "sans-serif"],
