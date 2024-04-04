@@ -1,14 +1,16 @@
-import backgroundImg from "../assets/backgroundImg2.jpg";
+import cozyCasaVideo from "../assets/video/cozyCasaVideo.mp4";
 const Hero = () => {
   return (
-    <section
-      id="home"
-      className="flex flex-col  justify-center min-h-screen gap-10
-      h-screen bg-cover bg-center "
-      style={{ backgroundImage: `url(${backgroundImg})` }}
-    >
+    <section id="home" className="flex flex-col  justify-center  gap-10">
+      <video
+        src={cozyCasaVideo}
+        autoPlay
+        loop
+        muted
+        className=" inset-0 object-cover  h-dvh"
+      />
       <div
-        className="p-8
+        className="px-8 pb-8 
       flex flex-col justify-center"
       >
         <h1 className="font-bold text-3xl md:text-7xl">

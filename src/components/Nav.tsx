@@ -20,7 +20,7 @@ const Nav = () => {
         font-montserrat font-medium text-sm"
     >
       {/* left side */}
-      <div className="w-16 h-16">
+      <div className="w-10 h-10 md:w-16 md:h-16">
         <img src={cozyLogo} alt="logo" />
       </div>
       {/* right side */}
