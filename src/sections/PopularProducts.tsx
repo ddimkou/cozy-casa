@@ -1,6 +1,7 @@
 import HText from "../shared/HText";
 import { ProductTypes, products } from "../constants";
 import { useState } from "react";
+import { StarIcon } from "@heroicons/react/24/solid";
 
 const PopularProducts = () => {
   const [selectedProduct, setSelectedProduct] = useState<ProductTypes>(
@@ -23,10 +24,18 @@ const PopularProducts = () => {
           <img src={selectedProduct.imgUrl} alt="" width={600} />
         </div>
         {/* title */}
-        <h3 className="text-center font-bold py-2 text-xl">
-          {selectedProduct.item} -{" "}
-          <span className="text-base font-normal">{selectedProduct.code}</span>
-        </h3>
+        <div className="flex flex-col items-center pb-4">
+          <div className="flex items-center gap-2">
+            <h3 className=" font-bold text-xl">{selectedProduct.item}</h3>
+
+            <div className="flex items-center gap-0.5">
+              <StarIcon className="w-4 h-4 text-yellow-400 " />
+              <p className="text-xs">{selectedProduct.stars}</p>
+            </div>
+          </div>
+
+          <p className="text-base font-normal">{selectedProduct.code}</p>
+        </div>
         {/* select */}
         <div className=" flex flex-row items-center justify-center gap-2 flex-wrap">
           {products.map((product) => (
@@ -39,6 +48,7 @@ const PopularProducts = () => {
               onClick={() => setSelectedProduct(product)}
             />
           ))}
+          <div></div>
         </div>
       </div>
     </section>
