@@ -7,7 +7,7 @@ import {
   Services,
   SpecialOffer,
   Subscribe,
-  SuperQuality,
+  Count,
 } from "./sections/index";
 
 const App = () => {
@@ -16,10 +16,8 @@ const App = () => {
       <Nav />
       <Hero />
       <PopularProducts />
+      <Count />
 
-      <section>
-        <SuperQuality />
-      </section>
       <section>
         <Services />
       </section>

@@ -5,7 +5,7 @@ import Reviews from "./Reviews";
 import Services from "./Services";
 import SpecialOffer from "./SpecialOffer";
 import Subscribe from "./Subscribe";
-import SuperQuality from "./SuperQuality";
+import Count from "./Count";
 
 export {
   Footer,
@@ -15,5 +15,5 @@ export {
   Services,
   SpecialOffer,
   Subscribe,
-  SuperQuality,
+  Count,
 };
