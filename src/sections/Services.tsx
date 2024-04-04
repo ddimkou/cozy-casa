@@ -3,23 +3,30 @@ import hotel from "../assets/hotel.jpg";
 import HText from "../shared/HText";
 const Services = () => {
   return (
-    <section className="bg-soft-warm-light">
+    <section id="projects" className="bg-soft-warm-light p-8">
       <HText>
         <span className="text-pale-red">P</span>rojects{" "}
       </HText>
       {/* hotel */}
-      <div>
+      <div
+        className="my-14
+      flex flex-col sm:flex-row items-center justify-center gap-8"
+      >
         <div>
-          <img src={hotel} alt="home" className="h-64" />
+          <img src={hotel} alt="home" className="h-44 md:h-64 lg:h-72" />
+          <p className="text-sm sm:text-md md:text-lg  text-center font-bold">
+            Hotel Projects
+          </p>
         </div>
-        <p className="text-lg lg:text-2xl">Hotel Projects</p>
-      </div>
-      {/* home */}
-      <div>
+        {/* home */}
         <div>
-          <img src={home} alt="hotel" className="h-64" />
+          <div>
+            <img src={home} alt="hotel" className="h-44 md:h-64 lg:h-72" />
+            <p className="text-sm sm:text-md md:text-lg  text-center font-bold">
+              Residence Projects
+            </p>
+          </div>
         </div>
-        <p className="text-lg lg:text-2xl">Residence Project</p>
       </div>
     </section>
   );
