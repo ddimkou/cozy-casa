@@ -17,10 +17,8 @@ const App = () => {
       <Hero />
       <PopularProducts />
       <Count />
+      <Services />
 
-      <section>
-        <Services />
-      </section>
       <section>
         <SpecialOffer />
       </section>
