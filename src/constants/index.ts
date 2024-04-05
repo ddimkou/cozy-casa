@@ -60,3 +60,26 @@ export const products: ProductTypes[] = [
     stars: "4.7",
   },
 ];
+
+// Special Offers
+export type OfferProps = {
+  title: string;
+  subtitle: string;
+};
+export const offers: OfferProps[] = [
+  {
+    title: "Complimentary Design Consultation",
+    subtitle:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi cupiditate eveniet quaerat beatae at delectus.",
+  },
+  {
+    title: "Free Room Measurement Service",
+    subtitle:
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem inventore dolor voluptatem voluptates tenetur quos ipsa odit reiciendis repudiandae, deleniti qui mollitia.",
+  },
+  {
+    title: "Free 3D Room Rendering",
+    subtitle:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe earum eius hic rem repudiandae temporibus illo facilis?",
+  },
+];

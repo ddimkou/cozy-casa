@@ -1,13 +1,16 @@
 import cozyCasaVideo from "../assets/video/cozyCasaVideo.mp4";
 const Hero = () => {
   return (
-    <section id="home" className="flex flex-col  justify-center  gap-10">
+    <section
+      id="home"
+      className="flex flex-col justify-center gap-10 bg-soft-warm-light"
+    >
       <video
         src={cozyCasaVideo}
         autoPlay
         loop
         muted
-        className=" inset-0 object-cover  h-dvh"
+        className=" inset-0 object-cover h-dvh"
       />
       <div
         className="px-8 pb-8 
