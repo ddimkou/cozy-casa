@@ -3,7 +3,7 @@ import HText from "../shared/HText";
 
 const SpecialOffer = () => {
   return (
-    <section id="offers" className="p-8">
+    <section id="offers" className="p-8 ">
       <HText>
         <span className="text-pale-red">S</span>pecial{" "}
         <span className="text-pale-red">O</span>ffers
@@ -13,14 +13,14 @@ const SpecialOffer = () => {
         {offers.map((offer: OfferProps, index: number) => (
           <div
             key={index}
-            className="w-80 h-96 border-2 border-black rounded-md shadow-xl
+            className="w-80 h-96 border-2 border-black rounded-md shadow-xl bg-soft-warm-light
           flex flex-col items-center justify-between"
           >
-            <div className="w-full bg-soft-warm-light h-14 flex justify-center">
+            <div className="w-full h-28 flex justify-center bg-white">
               <img
                 src={offer.img}
                 alt={offer.title}
-                className="max-w-full h-36 object-contain"
+                className="max-w-full object-contain"
               />
             </div>
             <div className="p-4 font-bold text-lg text-center">
