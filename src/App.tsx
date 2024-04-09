@@ -3,7 +3,6 @@ import {
   Footer,
   Hero,
   PopularProducts,
-  Reviews,
   Services,
   SpecialOffer,
   Subscribe,
@@ -18,16 +17,9 @@ const App = () => {
       <PopularProducts />
       <Count />
       <Services />
+      <SpecialOffer />
+      <Subscribe />
 
-      <section>
-        <SpecialOffer />
-      </section>
-      <section>
-        <Reviews />
-      </section>
-      <section>
-        <Subscribe />
-      </section>
       <section>
         <Footer />
       </section>
