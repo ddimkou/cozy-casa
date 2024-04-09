@@ -65,21 +65,25 @@ export const products: ProductTypes[] = [
 export type OfferProps = {
   title: string;
   subtitle: string;
+  img: string;
 };
 export const offers: OfferProps[] = [
   {
     title: "Complimentary Design Consultation",
     subtitle:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi cupiditate eveniet quaerat beatae at delectus.",
+    img: "src/assets/card/design1.png",
   },
   {
     title: "Free Room Measurement Service",
     subtitle:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem inventore dolor voluptatem voluptates tenetur quos ipsa odit reiciendis repudiandae, deleniti qui mollitia.",
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id repudiandae ipsam laboriosam vitae culpa laudantium.",
+    img: "src/assets/card/measure1.png",
   },
   {
     title: "Free 3D Room Rendering",
     subtitle:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe earum eius hic rem repudiandae temporibus illo facilis?",
+    img: "src/assets/card/3d1.png",
   },
 ];
