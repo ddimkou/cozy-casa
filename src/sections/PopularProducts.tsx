@@ -15,10 +15,7 @@ const PopularProducts = () => {
       </HText>
       {/* products */}
 
-      <div
-        className="min-h-80 my-14 border-2 border-red-500
-      flex flex-col "
-      >
+      <div className="min-h-80 my-14 flex flex-col">
         {/* img */}
         <div className="relative flex justify-center w-full">
           <img src={selectedProduct.imgUrl} alt="" width={600} />
@@ -44,7 +41,11 @@ const PopularProducts = () => {
               alt={product.item}
               key={product.item}
               width={80}
-              className="border-2 border-gray-500 cursor-pointer"
+              className={`border-2 cursor-pointer ${
+                selectedProduct.item === product.item
+                  ? "border-red-500"
+                  : "border-gray-500"
+              }`}
               onClick={() => setSelectedProduct(product)}
             />
           ))}
