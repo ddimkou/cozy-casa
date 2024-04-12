@@ -17,7 +17,7 @@ const Nav = () => {
       className=" fixed w-full z-50
         flex items-center justify-between 
         py-2 px-8  bg-nav-color
-        font-montserrat font-medium text-sm md:text-base"
+        font-montserrat font-medium tracking-wide text-sm md:text-base"
     >
       {/* left side */}
       <div className="w-10 h-10 md:w-16 md:h-16">

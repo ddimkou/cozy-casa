@@ -3,7 +3,7 @@ import hotel from "../assets/hotel.jpg";
 import HText from "../shared/HText";
 const Services = () => {
   return (
-    <section id="projects" className="bg-soft-warm-light p-8">
+    <section className="bg-soft-warm-light p-8">
       <HText>
         <span className="text-pale-red">P</span>rojects{" "}
       </HText>

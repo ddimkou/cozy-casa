@@ -24,7 +24,7 @@ const PopularProducts = () => {
   };
 
   return (
-    <section id="popular" className="p-8">
+    <section id="products" className="p-8">
       <HText>
         <span className="text-pale-red">P</span>opular{" "}
         <span className="text-pale-red">P</span>roducts
