@@ -1,12 +1,28 @@
 import HText from "../shared/HText";
-import { ProductTypes, products } from "../constants";
+import { products } from "../constants";
 import { useState } from "react";
-import { StarIcon } from "@heroicons/react/24/solid";
+import {
+  StarIcon,
+  ArrowLeftIcon,
+  ArrowRightIcon,
+} from "@heroicons/react/24/solid";
 
 const PopularProducts = () => {
-  const [selectedProduct, setSelectedProduct] = useState<ProductTypes>(
-    products[0]
-  );
+  const [selectedProductIndex, setSelectedProductIndex] = useState<number>(0);
+  const selectedProduct = products[selectedProductIndex];
+
+  const handlePrevProduct = (): void => {
+    setSelectedProductIndex((prevIndex) =>
+      prevIndex > 0 ? prevIndex - 1 : products.length - 1
+    );
+  };
+
+  const handleNextProduct = (): void => {
+    setSelectedProductIndex((prevIndex) =>
+      prevIndex < products.length - 1 ? prevIndex + 1 : 0
+    );
+  };
+
   return (
     <section id="popular" className="p-8">
       <HText>
@@ -17,8 +33,16 @@ const PopularProducts = () => {
 
       <div className="min-h-80 my-14 flex flex-col">
         {/* img */}
-        <div className="relative flex justify-center w-full">
+        <div className="relative flex justify-center items-center w-full">
+          <ArrowLeftIcon
+            className="h-10 mx-4 hover:text-pale-red hover:drop-shadow-md cursor-pointer"
+            onClick={handlePrevProduct}
+          />
           <img src={selectedProduct.imgUrl} alt="" width={600} />
+          <ArrowRightIcon
+            className="h-10 mx-4 hover:text-pale-red hover:drop-shadow-md cursor-pointer"
+            onClick={handleNextProduct}
+          />
         </div>
         {/* title */}
         <div className="flex flex-col items-center pb-4">
@@ -35,18 +59,18 @@ const PopularProducts = () => {
         </div>
         {/* select */}
         <div className=" flex flex-row items-center justify-center gap-2 flex-wrap">
-          {products.map((product) => (
+          {products.map((product, index) => (
             <img
               src={product.imgUrl}
               alt={product.item}
               key={product.item}
               width={80}
               className={`border-2 cursor-pointer ${
-                selectedProduct.item === product.item
+                index === selectedProductIndex
                   ? "border-red-500"
                   : "border-gray-500"
               }`}
-              onClick={() => setSelectedProduct(product)}
+              onClick={() => setSelectedProductIndex(index)}
             />
           ))}
           <div></div>
