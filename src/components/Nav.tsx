@@ -21,7 +21,9 @@ const Nav = () => {
     >
       {/* left side */}
       <div className="w-10 h-10 md:w-16 md:h-16">
-        <img src={cozyLogo} alt="logo" />
+        <a href="#home">
+          <img src={cozyLogo} alt="Home" />
+        </a>
       </div>
       {/* right side */}
       {isAboveMediumScreens ? (

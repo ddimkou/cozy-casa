@@ -18,11 +18,12 @@ export type ProductTypes = {
 };
 export const products: ProductTypes[] = [
   {
-    item: "Table",
-    imgUrl: "src/assets/products/table.jpg",
-    code: "#Z44B3",
-    stars: "4.8",
+    item: "Sofa",
+    imgUrl: "src/assets/products/sofa.jpg",
+    code: "#V44V65",
+    stars: "4.2",
   },
+
   {
     item: "Bedside",
     imgUrl: "src/assets/products/bedside.jpg",
@@ -48,11 +49,12 @@ export const products: ProductTypes[] = [
     stars: "4.5",
   },
   {
-    item: "Sofa",
-    imgUrl: "src/assets/products/sofa.jpg",
-    code: "#V44V65",
-    stars: "4.2",
+    item: "Table",
+    imgUrl: "src/assets/products/table.jpg",
+    code: "#Z44B3",
+    stars: "4.8",
   },
+
   {
     item: "Trolley",
     imgUrl: "src/assets/products/trolley.jpg",

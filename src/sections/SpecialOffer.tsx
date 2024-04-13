@@ -9,7 +9,7 @@ const SpecialOffer = () => {
         <span className="text-pale-red">O</span>ffers
       </HText>
       {/* card */}
-      <div className="flex justify-around flex-wrap gap-5 my-14 border-2 border-red-500">
+      <div className="flex justify-around flex-wrap gap-5 my-14">
         {offers.map((offer: OfferProps, index: number) => (
           <div
             key={index}
