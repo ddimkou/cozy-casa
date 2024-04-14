@@ -15,7 +15,7 @@ Make sure you have Node.js and npm
 
     git clone https://github.com/ddimkou/cozy-casa.git
 
-    cd supercar-rent
+    cd cozy-casa
 
     npm install
 
